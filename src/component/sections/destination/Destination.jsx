@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
+import svg from '../../../assets/icon/navigation 1.svg';
 import img1 from '../../../assets/images/Rectangle 14-1.png';
 import img2 from '../../../assets/images/Rectangle 14-2.png';
 import img3 from '../../../assets/images/Rectangle 14.png';
@@ -23,7 +24,7 @@ function Destination() {
             </div>
             <div className="card-footer">
               <div className="day">
-                <img src="icon/navigation 1.svg" alt="" /> 10 Days Trip
+                <img src={svg} alt="" /> 10 Days Trip
               </div>
             </div>
           </div>
@@ -37,7 +38,7 @@ function Destination() {
             </div>
             <div className="card-footer">
               <div className="day">
-                <img src="icon/navigation 1.svg" alt="" /> 12 Days Trip
+                <img src={svg} alt="" /> 12 Days Trip
               </div>
             </div>
           </div>
@@ -51,7 +52,7 @@ function Destination() {
             </div>
             <div className="card-footer">
               <div className="day">
-                <img src="icon/navigation 1.svg" alt="" /> 28 Days Trip
+                <img src={svg} alt="" /> 28 Days Trip
               </div>
             </div>
           </div>

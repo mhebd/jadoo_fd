@@ -1,4 +1,6 @@
 import React from 'react';
+import icon1 from '../../../assets/icon/Vector 1.svg';
+import img1 from '../../../assets/images/Image 111.png';
 
 function Testimonial() {
   return (
@@ -19,7 +21,7 @@ function Testimonial() {
 
       <div className="testimonials">
         <div className="card">
-          <img src="images/Image 111.png" alt="avatar" className="card-img" />
+          <img src={img1} alt="avatar" className="card-img" />
           <p className="opinion">
             “On the Windows talking painted pasture yet its express parties use. Sure last upon he
             same as knew next. Of believed or diverted no.”
@@ -34,10 +36,10 @@ function Testimonial() {
 
       <div className="buttons">
         <button className="prev" type="button">
-          <img src="icon/Vector 1.svg" alt="" />
+          <img src={icon1} alt="" />
         </button>
         <button className="next" type="button">
-          <img src="icon/Vector 1.svg" alt="" />
+          <img src={icon1} alt="" />
         </button>
       </div>
     </div>

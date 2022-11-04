@@ -1,4 +1,13 @@
 import React from 'react';
+import icon7 from '../../../assets/icon/Group 11.svg';
+import icon6 from '../../../assets/icon/Group 12.svg';
+import icon5 from '../../../assets/icon/Group 7.svg';
+import icon1 from '../../../assets/icon/Group-22.png';
+import icon2 from '../../../assets/icon/Group.svg';
+import leaf from '../../../assets/icon/LEAF.svg';
+import map from '../../../assets/icon/map 1.svg';
+import send from '../../../assets/icon/send 2.svg';
+import img2 from '../../../assets/images/image 32.png';
 import img from '../../../assets/images/Rectangle 17.jpg';
 
 function Booking() {
@@ -14,7 +23,7 @@ function Booking() {
         <div className="todo-list">
           <div className="todo">
             <div className="todo-img">
-              <img src="icon/Group 7.svg" alt="" />
+              <img src={icon5} alt="" />
             </div>
             <div className="todo-info">
               <h5>Choose Destination</h5>
@@ -26,7 +35,7 @@ function Booking() {
           </div>
           <div className="todo">
             <div className="todo-img">
-              <img src="icon/Group 12.svg" alt="" />
+              <img src={icon6} alt="" />
             </div>
             <div className="todo-info">
               <h5>Make Payment</h5>
@@ -38,7 +47,7 @@ function Booking() {
           </div>
           <div className="todo">
             <div className="todo-img">
-              <img src="icon/Group 11.svg" alt="" />
+              <img src={icon7} alt="" />
             </div>
             <div className="todo-info">
               <h5>Reach Airport on Selected Date</h5>
@@ -60,21 +69,21 @@ function Booking() {
             <span className="guide">Robin Roy</span>
           </p>
           <div className="icons">
-            <img src="icon/LEAF.svg" alt="" />
-            <img src="icon/map 1.svg" alt="" />
-            <img src="icon/send 2.svg" alt="" />
+            <img src={leaf} alt="" />
+            <img src={map} alt="" />
+            <img src={send} alt="" />
           </div>
           <div className="card-footer">
             <div className="info">
-              <img src="icon/Group-22.png" alt="" />
+              <img src={icon1} alt="" />
               24 people going
             </div>
             <div className="icon">
-              <img src="icon/Group.svg" alt="" />
+              <img src={icon2} alt="" />
             </div>
           </div>
           <div className="overlay-card">
-            <img src="images/image 32.png" alt="" />
+            <img src={img2} alt="" />
             <div className="info">
               <p className="tag-line">Ongoing</p>
               <h5>Trip to rome</h5>
