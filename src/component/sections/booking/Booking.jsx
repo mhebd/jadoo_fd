@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../../../assets/images/Rectangle 17.jpg';
 
 function Booking() {
   return (
@@ -52,7 +53,7 @@ function Booking() {
 
       <div className="booking-info">
         <div className="card">
-          <img src="images/Rectangle 17.jpg" alt="" className="card-img" />
+          <img src={img} alt="" className="card-img" />
           <h2 className="card-title">Trip To Greece</h2>
           <p className="info">
             <span className="date">14-29 June</span> | by

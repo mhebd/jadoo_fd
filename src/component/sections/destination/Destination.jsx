@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
+import img1 from '../../../assets/images/Rectangle 14-1.png';
+import img2 from '../../../assets/images/Rectangle 14-2.png';
+import img3 from '../../../assets/images/Rectangle 14.png';
 
 function Destination() {
   return (
@@ -12,7 +15,7 @@ function Destination() {
 
       <div className="destinations">
         <div className="card">
-          <img src="images/Rectangle 14-1.png" alt="Destination image" className="card-img" />
+          <img src={img1} alt="Destination image" className="card-img" />
           <div className="card-body">
             <div className="card-info">
               <p className="location">Rome, Italy</p>
@@ -26,7 +29,7 @@ function Destination() {
           </div>
         </div>
         <div className="card">
-          <img src="images/Rectangle 14-2.png" alt="Destination image" className="card-img" />
+          <img src={img2} alt="Destination image" className="card-img" />
           <div className="card-body">
             <div className="card-info">
               <p className="location">London, UK</p>
@@ -40,7 +43,7 @@ function Destination() {
           </div>
         </div>
         <div className="card">
-          <img src="images/Rectangle 14.png" alt="Destination image" className="card-img" />
+          <img src={img3} alt="Destination image" className="card-img" />
           <div className="card-body">
             <div className="card-info">
               <p className="location">Full Europe</p>

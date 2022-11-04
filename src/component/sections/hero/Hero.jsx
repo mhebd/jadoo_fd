@@ -1,4 +1,6 @@
 import React from 'react';
+import heroImg from '../../../assets/images/Image.png';
+import logo from '../../../assets/images/Logo.png';
 
 function Hero() {
   return (
@@ -6,7 +8,7 @@ function Hero() {
       {/* <!-- Navbar section --> */}
       <nav className="navbar">
         <div className="logo-wrapper">
-          <img src="images/Logo.png" alt="" />
+          <img src={logo} alt="" />
         </div>
 
         <div className="menu-wrapper">
@@ -78,7 +80,7 @@ function Hero() {
           </div>
         </div>
         <div className="image">
-          <img src="images/Image.png" alt="hero image" />
+          <img src={heroImg} alt="hero image" />
         </div>
       </div>
     </div>
