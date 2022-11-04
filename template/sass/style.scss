@@ -22,6 +22,7 @@
 		color: $sec_head;
 		font-size: 50px;
 		font-weight: bold;
+		font-family: $volkhov;
 	}
 }
 
@@ -230,6 +231,7 @@
 	column-gap: 20px;
 	.sec-heading {
 		text-align: left;
+		padding-left: 0;
 	}
 	.todo {
 		display: flex;
@@ -350,5 +352,228 @@
 				}
 			}
 		}
+	}
+}
+
+.testimonial {
+	display: grid;
+	grid-template-columns: 40% 50% 10%;
+	column-gap: 20px;
+	.testi-nav {
+		.sec-heading {
+			text-align: left;
+			padding-left: 0;
+		}
+		.dots {
+			.dot {
+				display: inline-block;
+				margin-right: 15px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				background: #e5e5e5;
+			}
+			.active {
+				background: #39425d;
+			}
+		}
+	}
+
+	.card {
+		position: relative;
+		margin: 0 30px;
+		padding: 30px;
+		padding-right: 70px;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+		.card-img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			position: absolute;
+			top: -20px;
+			left: -20px;
+		}
+		.opinion {
+			color: #5e6282;
+			margin-bottom: 50px;
+		}
+		.reviewer-info {
+			color: #5e6282;
+			.name {
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 8px;
+			}
+			.location {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		button {
+			border: 0px;
+			img {
+				width: 1rem;
+			}
+		}
+		.prev {
+			transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			margin-bottom: 40px;
+		}
+	}
+}
+
+// Logo section
+.logo-sec {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	img {
+		max-width: 150px;
+	}
+}
+
+//  Subscribe section
+.subscribe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.subs-heading {
+		text-align: center;
+		font-size: 33px;
+		font-weight: 600;
+		margin-bottom: 40px;
+		color: #5e6282;
+	}
+	.subs-form {
+		display: flex;
+		.input-group {
+			display: flex;
+			background: $theme_bg;
+			.input-group-append {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				img {
+					padding: 3px;
+					border: 1px solid #555;
+					border-radius: 1px;
+					-webkit-border-radius: 1px;
+					-moz-border-radius: 1px;
+					-ms-border-radius: 1px;
+					-o-border-radius: 1px;
+				}
+			}
+			input {
+				padding: 7px 12px;
+				border: 0px;
+				outline: none;
+				background: transparent;
+			}
+		}
+		.btn {
+			margin-left: 15px;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			background: #ff946d;
+			padding: 0 20px;
+			border: 1px solid #ff946d;
+			color: $theme_bg;
+			font-weight: 600;
+		}
+	}
+}
+
+// Footer section
+.footer-top {
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	column-gap: 15px;
+	.footer-logo {
+		img {
+			margin-bottom: 40px;
+		}
+		p {
+			color: #5e6282;
+			font-size: 13;
+			font-weight: 500;
+			padding-right: 50px;
+		}
+	}
+	.footer-navs {
+		display: flex;
+		justify-content: space-evenly;
+		.nav {
+			.nav-title {
+				font-weight: bold;
+				font-size: 21;
+				color: #080809;
+				margin-bottom: 30px;
+			}
+			.fn-menu {
+				list-style-type: none;
+				.menu-item {
+					padding: 5px 0;
+					.menu-link {
+						color: #5e6282;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-social {
+		.social-menu {
+			list-style-type: none;
+			margin-bottom: 10px;
+			.menu-item {
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+		h5 {
+			color: #5e6282;
+			font-size: 20;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+	}
+}
+.footer-bottom {
+	padding-bottom: 30px;
+	padding-top: 60px;
+	p {
+		color: #5e6282;
+		text-align: center;
+		font-size: 14;
+		font-weight: 500;
 	}
 }
