@@ -1,0 +1,129 @@
+.booking {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	column-gap: 20px;
+	.sec-heading {
+		text-align: left;
+		padding-left: 0;
+	}
+	.todo {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 25px;
+		.todo-img {
+			width: 50px;
+			height: 50px;
+			margin-right: 15px;
+		}
+		.todo-info {
+			color: #5e6282;
+			h5 {
+				font-size: 1rem;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.booking-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.card {
+			position: relative;
+			padding: 20px;
+			border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			-ms-border-radius: 30px;
+			-o-border-radius: 30px;
+			width: 350px;
+			.card-img {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+			.card-title {
+				font-size: 18px;
+				font-weight: 500;
+				color: #080809;
+				margin-bottom: 10px;
+			}
+			.info {
+				color: #84829a;
+			}
+			.icons {
+				margin: 15px 0;
+				img {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-ms-border-radius: 50%;
+					-o-border-radius: 50%;
+					margin-right: 10px;
+					background-color: #e3e3e3c7;
+					padding: 5px;
+				}
+			}
+			.card-footer {
+				display: flex;
+				justify-content: space-between;
+			}
+			.overlay-card {
+				position: absolute;
+				border-radius: 20px;
+				width: 200px;
+				display: flex;
+				align-items: center;
+				background: $theme_bg;
+				padding: 12px;
+				bottom: 50px;
+				right: -70px;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				-ms-border-radius: 20px;
+				-o-border-radius: 20px;
+				img {
+					width: 40px;
+					height: 40px;
+					margin-right: 10px;
+					border-radius: 50%;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-ms-border-radius: 50%;
+					-o-border-radius: 50%;
+				}
+				.info {
+					.tag-line {
+						font-size: 14px;
+						color: #84829a;
+					}
+					h5 {
+						font-size: 18px;
+						font-weight: 500;
+						color: #080809;
+						margin-bottom: 5px;
+					}
+					.status {
+						font-size: 14;
+						font-weight: 500;
+						margin-bottom: 5px;
+						span {
+							color: #8a79df;
+						}
+					}
+					.progress-bar {
+						width: 100%;
+						height: 2px;
+						background: #ddd;
+						.complete {
+							width: 40%;
+							height: 2px;
+							background: #8a79df;
+						}
+					}
+				}
+			}
+		}
+	}
+}
