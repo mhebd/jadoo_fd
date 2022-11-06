@@ -1,0 +1,70 @@
+@import './partials/variables';
+@import './partials/reset';
+@import './partials/mixins';
+
+.section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px 15px;
+	margin-bottom: 50px;
+}
+
+.sec-heading {
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 40px;
+	.tag-line {
+		@include textfont(18, 600);
+		color: $theme_text_1;
+	}
+	.heading {
+		color: $sec_head;
+		@include textfont(50, 700);
+		font-family: $volkhov;
+	}
+}
+
+body {
+	position: relative;
+}
+
+.after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+.before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+// Hero section
+@import './partials/hero';
+
+// Service section
+@import './partials/service';
+
+//  Destination section
+@import './partials/destinatation';
+
+//  Booking section
+@import './partials/booking';
+
+// Testmonial section
+@import './partials/testimonial';
+
+// Logo section
+@import './partials/logos';
+
+//  Subscribe section
+@import './partials/subscribe';
+
+// Footer section
+@import './partials/footer';
+
+// Responsiv
+@import './partials/responsiv';

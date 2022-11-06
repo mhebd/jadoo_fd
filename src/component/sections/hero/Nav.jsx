@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import bar from '../../../assets/icon/icons8-menu-64.png';
 import logo from '../../../assets/images/Logo.png';
 
 function Nav() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="logo-wrapper">
         <img src={logo} alt="" />
       </div>
 
-      <div className="menu-wrapper">
+      <div className={`menu-wrapper ${showMenu ? 'show' : ''}`}>
         <ul className="nav">
           <li className="nav-item">
             <a href="/" className="nav-link">
@@ -53,6 +56,10 @@ function Nav() {
             <option value="bn">BN</option>
           </select>
         </form>
+
+        <button className="navbar-toggler" type="button" onClick={(e) => setShowMenu(!showMenu)}>
+          <img src={bar} alt="" />
+        </button>
       </div>
     </nav>
   );

@@ -96,7 +96,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <h5>Discover out app</h5>
+          <h5>Discover our app</h5>
           <div className="app-icons">
             <a href="/">
               <img src={icon4} alt="" />

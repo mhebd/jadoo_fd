@@ -1,0 +1,6 @@
+@mixin textfont($size, $weight) {
+	font: {
+		size: $size + px;
+		weight: $weight;
+	}
+}

@@ -1,0 +1,170 @@
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+	.hero {
+		.hero-content {
+			.description {
+				.heading {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+	.after {
+		width: 50%;
+	}
+
+	.sec-heading {
+		.heading {
+			font-size: 30px;
+		}
+	}
+
+	.hero {
+		.navbar {
+			position: relative;
+			.menu-wrapper {
+				display: block;
+				position: absolute;
+				background: $theme_bg;
+				width: 100%;
+				top: -999px;
+				transition: all 0.3s ease-in;
+				-webkit-transition: all 0.3s ease-in;
+				-moz-transition: all 0.3s ease-in;
+				-ms-transition: all 0.3s ease-in;
+				-o-transition: all 0.3s ease-in;
+				z-index: 99;
+				.nav {
+					.nav-item {
+						display: block;
+					}
+				}
+			}
+
+			.show {
+				top: 100%;
+			}
+
+			.nav-end {
+				margin-left: auto;
+			}
+
+			.navbar-toggler {
+				display: block;
+			}
+		}
+
+		.hero-content {
+			grid-template-columns: 100% !important;
+			padding: 60px 0;
+			.image {
+				order: 1;
+			}
+
+			.description {
+				order: 2;
+				align-items: center;
+				text-align: center;
+				padding: 20px;
+				.bg-img {
+					display: none;
+				}
+				.tag-line {
+					font-size: 18px;
+				}
+				.heading {
+					font-size: 30px;
+				}
+				.buttons {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	// Booking
+	.booking {
+		grid-template-columns: 100% !important;
+		.sec-heading {
+			text-align: center;
+			padding-left: 15px;
+		}
+		.todo-list {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+
+	// Testimonial
+	.testimonial {
+		grid-template-columns: 100% !important;
+		.testi-nav {
+			.sec-heading {
+				text-align: center;
+				padding-left: 15px;
+			}
+			.dots {
+				display: none;
+			}
+		}
+
+		.buttons {
+			flex-direction: row;
+			margin-top: 50px;
+			.prev {
+				margin-bottom: 0px;
+				margin-right: 40px;
+			}
+		}
+	}
+
+	// Subscribe
+	.subscribe {
+		.s-after {
+			width: 30px;
+			height: 30px;
+			top: -5px;
+			right: -5px;
+		}
+		.subs-heading {
+			font-size: 25px;
+		}
+		.subs-form {
+			flex-direction: column;
+			.input-group {
+				margin-bottom: 20px;
+			}
+			.btn {
+				padding: 9px;
+			}
+		}
+	}
+
+	// Footer
+	.footer-top {
+		grid-template-columns: 100%;
+		column-gap: 15px;
+		.footer-logo {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.footer-social {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-top: 40px;
+		}
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+}

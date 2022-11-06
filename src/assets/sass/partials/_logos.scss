@@ -1,0 +1,10 @@
+.logo-sec {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	img {
+		max-width: 150px;
+		margin: 10px;
+	}
+}
